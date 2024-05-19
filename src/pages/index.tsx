@@ -12,13 +12,6 @@ type Data = {
 };
 
 export default function Home() {
-  data.forEach((item) => {
-    console.log(item.category);
-    console.log(item.score);
-    console.log(item.icon);
-    console.log(item.bgColor);
-  });
-
   return (
     <>
       <Head>
@@ -28,7 +21,7 @@ export default function Home() {
       </Head>
       <main className="font-sans flex min-h-screen flex-col items-center justify-center">
         {/* Result + Summary Container */}
-        <div className="flex h-[100vh] w-full flex-col md:h-[50vh] md:w-[80vw] md:max-w-[800px] md:flex-row md:rounded-3xl md:shadow-2xl md:shadow-sky-800/25">
+        <div className="flex h-[100vh] w-full flex-col md:h-[50vh] md:min-h-[480px] md:w-[80vw] md:max-w-[800px] md:flex-row md:rounded-3xl md:shadow-2xl md:shadow-sky-800/25">
           {/* Result Container */}
           <div className="from-light-slate-blue to-light-royal-blue flex w-full flex-col items-center justify-evenly gap-3 rounded-b-3xl bg-gradient-to-b px-16 py-6 md:max-w-[50%] md:rounded-3xl">
             <h4 className="text-xl font-bold tracking-wide text-slate-300">
